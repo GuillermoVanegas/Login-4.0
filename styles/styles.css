@@ -1,0 +1,106 @@
+/* styles.css */
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),
+                radial-gradient(circle at 20% 30%, #3498db 40%, transparent 50%),
+                radial-gradient(circle at 80% 70%, #2d008f 30%, transparent 70%);
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: #fff; /* Fondo blanco para la tarjeta */
+    color: #333; /* Color de texto principal en la tarjeta */
+    border: 2px solid #0015ff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 136, 255, 0.2);
+    width: 400px; /* Ancho de la tarjeta */
+}
+
+.form-control {
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0; /* Color de fondo del campo de entrada */
+    color: #333;
+    border: 1px solid #0037ff;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.btn-primary {
+    font-size: 18px;
+    background-color: #00a2ff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+}
+
+.btn-secondary {
+    background-color: #00ff00;
+    border: none;
+    border-radius: 10px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.neon-text {
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+}
+
+#formLogin {
+    max-width: 300px; /* Ajusta el ancho máximo del formulario */
+    margin: 0 auto;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #333; /* Color del texto de la etiqueta del formulario */
+}
+
+.navbar {
+    background-color: #fff; /* Cambia el color de fondo de la barra de navegación a blanco */
+}
+
+.navbar-light .navbar-brand {
+    color: #333; /* Color del texto en la barra de navegación */
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: #333; /* Color del icono del botón de navegación */
+}
+
+#cerrar {
+    background-color: #ff5f5f;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container {
+    position: relative;
+}
+
+.card.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+}
